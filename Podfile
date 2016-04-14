@@ -7,6 +7,7 @@ target 'AmazingTutor' do
 
 pod 'FBSDKCoreKit'
 pod 'FBSDKLoginKit'
+pod 'Google/SignIn'
 
 end
 
