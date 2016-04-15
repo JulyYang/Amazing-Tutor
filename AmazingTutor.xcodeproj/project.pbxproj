@@ -104,18 +104,13 @@
 		18DA6EF61CAAB18800CF16A7 /* AmazingTutor */ = {
 			isa = PBXGroup;
 			children = (
+				18E87FAA1CC094D000AC939C /* AT documents */,
+				18E87FA91CC094AB00AC939C /* Teacher Personal Info */,
+				18E87FA81CC0947D00AC939C /* Teacher List */,
+				18E87FA71CC0946000AC939C /* Login */,
 				18DA6EF71CAAB18800CF16A7 /* AppDelegate.swift */,
-				18DA6EFB1CAAB18800CF16A7 /* Login.storyboard */,
-				18DA6EF91CAAB18800CF16A7 /* LoginViewController.swift */,
-				18F129591CB79839001820AF /* TList.storyboard */,
-				18E92E761CBF4ADC00BABC83 /* TListCell.xib */,
-				18AC3C2A1CB7B13E0013F6DF /* TListTableViewController.swift */,
 				18DA6F011CAAB18800CF16A7 /* Assets.xcassets */,
 				18DA6F031CAAB18800CF16A7 /* LaunchScreen.storyboard */,
-				18E8DADD1CBF789C00CE82DB /* GoogleService-Info.plist */,
-				18DA6F061CAAB18800CF16A7 /* Info.plist */,
-				18DA6EFE1CAAB18800CF16A7 /* AmazingTutor.xcdatamodeld */,
-				18E8DADF1CBF7A3F00CE82DB /* AmazingTutor-Bridging-Header.h */,
 			);
 			path = AmazingTutor;
 			sourceTree = "<group>";
@@ -127,6 +122,43 @@
 				18DA6F111CAAB18800CF16A7 /* Info.plist */,
 			);
 			path = AmazingTutorUITests;
+			sourceTree = "<group>";
+		};
+		18E87FA71CC0946000AC939C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				18DA6EFB1CAAB18800CF16A7 /* Login.storyboard */,
+				18DA6EF91CAAB18800CF16A7 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		18E87FA81CC0947D00AC939C /* Teacher List */ = {
+			isa = PBXGroup;
+			children = (
+				18F129591CB79839001820AF /* TList.storyboard */,
+				18E92E761CBF4ADC00BABC83 /* TListCell.xib */,
+				18AC3C2A1CB7B13E0013F6DF /* TListTableViewController.swift */,
+			);
+			name = "Teacher List";
+			sourceTree = "<group>";
+		};
+		18E87FA91CC094AB00AC939C /* Teacher Personal Info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Teacher Personal Info";
+			sourceTree = "<group>";
+		};
+		18E87FAA1CC094D000AC939C /* AT documents */ = {
+			isa = PBXGroup;
+			children = (
+				18E8DADD1CBF789C00CE82DB /* GoogleService-Info.plist */,
+				18DA6F061CAAB18800CF16A7 /* Info.plist */,
+				18DA6EFE1CAAB18800CF16A7 /* AmazingTutor.xcdatamodeld */,
+				18E8DADF1CBF7A3F00CE82DB /* AmazingTutor-Bridging-Header.h */,
+			);
+			name = "AT documents";
 			sourceTree = "<group>";
 		};
 		C9B04D59312D4F7B4FC3B9BA /* Frameworks */ = {
