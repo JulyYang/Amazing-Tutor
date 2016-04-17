@@ -6,10 +6,10 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--LoginPage-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginPage" id="BYZ-38-t0r" customClass="LoginViewController" customModule="AmazingTutor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginPage" title="LoginPage" id="BYZ-38-t0r" customClass="LoginViewController" customModule="AmazingTutor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,14 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenPic" translatesAutoresizingMaskIntoConstraints="NO" id="Q8h-Ey-RgN">
-                                <rect key="frame" x="0.0" y="-33.5" width="600" height="667"/>
+                                <rect key="frame" x="0.0" y="-34" width="600" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVX-j3-BmV" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="277" y="501" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVb-JT-9u3">
-                                <rect key="frame" x="277" y="545" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTx-dn-1QS">
@@ -54,13 +50,20 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mnO-nP-yhD" customClass="GIDSignInButton">
+                                <rect key="frame" x="277" y="541" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mnO-nP-yhD" firstAttribute="top" secondItem="JVX-j3-BmV" secondAttribute="bottom" constant="10" id="04n-Bf-b2u"/>
                             <constraint firstItem="Q8h-Ey-RgN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1e8-FT-EkH"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cVb-JT-9u3" secondAttribute="bottom" constant="25" id="3Dp-x2-Vpr"/>
+                            <constraint firstItem="mnO-nP-yhD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="96o-ZW-DGb"/>
                             <constraint firstItem="JVX-j3-BmV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.6" constant="36" id="9D2-Yd-JZS"/>
                             <constraint firstItem="Q8h-Ey-RgN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HEC-z7-W2Z"/>
+                            <constraint firstItem="mnO-nP-yhD" firstAttribute="centerY" secondItem="JVX-j3-BmV" secondAttribute="centerY" id="IFZ-7z-eDT"/>
+                            <constraint firstItem="mnO-nP-yhD" firstAttribute="width" secondItem="JVX-j3-BmV" secondAttribute="width" id="J3l-sA-Qpe"/>
                             <constraint firstItem="Q8h-Ey-RgN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kce-qf-adG"/>
                             <constraint firstItem="WTx-dn-1QS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LSR-A2-Ldg"/>
                             <constraint firstItem="BkY-ag-tld" firstAttribute="top" secondItem="WTx-dn-1QS" secondAttribute="bottom" constant="18" id="MmG-Nl-Vcf"/>
@@ -69,14 +72,14 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q8h-Ey-RgN" secondAttribute="bottom" id="UYX-Bb-H6f"/>
                             <constraint firstItem="WTx-dn-1QS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.2" id="VaR-DR-a18"/>
                             <constraint firstItem="JVX-j3-BmV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zk4-Ze-MXT"/>
+                            <constraint firstItem="mnO-nP-yhD" firstAttribute="height" secondItem="JVX-j3-BmV" secondAttribute="height" id="aai-lv-Ci3"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q8h-Ey-RgN" secondAttribute="bottom" id="c72-BM-smx"/>
                             <constraint firstItem="BkY-ag-tld" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dPQ-qe-Mp9"/>
                             <constraint firstItem="Q8h-Ey-RgN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jAi-RW-fFh"/>
-                            <constraint firstItem="cVb-JT-9u3" firstAttribute="top" secondItem="JVX-j3-BmV" secondAttribute="bottom" constant="14" id="nWU-gL-zQO"/>
+                            <constraint firstItem="mnO-nP-yhD" firstAttribute="top" secondItem="Q8h-Ey-RgN" secondAttribute="bottom" id="pKn-fR-RkG"/>
                             <constraint firstAttribute="trailing" secondItem="Q8h-Ey-RgN" secondAttribute="trailing" id="yi1-b3-ITQ"/>
                             <constraint firstItem="981-kh-XHS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="z4v-7Y-l1Y"/>
                             <constraint firstItem="981-kh-XHS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zDC-7X-8y7"/>
-                            <constraint firstItem="cVb-JT-9u3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zdG-Lo-ymv"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -84,9 +87,14 @@
                                 <exclude reference="jAi-RW-fFh"/>
                                 <exclude reference="UYX-Bb-H6f"/>
                                 <exclude reference="c72-BM-smx"/>
+                                <exclude reference="IFZ-7z-eDT"/>
+                                <exclude reference="pKn-fR-RkG"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="GoogleSigninButton" destination="mnO-nP-yhD" id="oce-Mf-UxX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
